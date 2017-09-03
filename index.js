@@ -15,10 +15,8 @@ module.exports = (options) => {
         'css'
     ]
     options.handlers = options.handlers || {}
-    options.parserOptions = options.parserOptions || {
-        ecmaVersion: 7,
-        sourceType: 'module'
-    }
+    options.parserOptions = options.parserOptions || {}
+    options.parserOptions.ecmaVersion = options.parserOptions.ecmaVersion || 7
     options.parserOptions.sourceType = options.parserOptions.sourceType || 'module'
 
     let acceptedExtensions = Object.keys(options.handlers)

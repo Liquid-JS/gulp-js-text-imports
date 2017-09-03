@@ -1,6 +1,6 @@
 {
   "name": "gulp-js-text-imports",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gulp plugin to inline `import name from './file.html';` as `const name = \"content of file.html file\";`, with support for content transformations",
   "main": "index.js",
   "scripts": {
