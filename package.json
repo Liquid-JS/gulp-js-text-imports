@@ -1,0 +1,29 @@
+{
+  "name": "gulp-js-text-imports",
+  "version": "0.0.1",
+  "description": "Gulp plugin to inline `import name from './file.html';` as `const name = \"content of file.html file\";`, with support for content transformations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LiquidJS",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "acorn": "^5.1.1",
+    "gulp-util": "^3.0.8",
+    "through2": "^2.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liquid-JS/gulp-js-text-imports.git"
+  },
+  "keywords": [
+    "gulp",
+    "js",
+    "imports"
+  ],
+  "bugs": {
+    "url": "https://github.com/Liquid-JS/gulp-js-text-imports/issues"
+  },
+  "homepage": "https://github.com/Liquid-JS/gulp-js-text-imports#readme"
+}
