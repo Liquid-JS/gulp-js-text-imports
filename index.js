@@ -1,4 +1,4 @@
-const acorn = require("acorn")
+const acorn = require("acorn/dist/acorn_loose")
 const fs = require("fs")
 const path = require("path")
 const through = require('through2')
@@ -39,7 +39,7 @@ module.exports = (options) => {
 
         if (file.isBuffer()) {
             let source = file.contents.toString()
-            let parsed = acorn.parse(source, options.parserOptions)
+            let parsed = acorn.parse_dammit(source, options.parserOptions)
             let processImports = parsed.body.filter(node => {
                 // Look for import declarations, importing files with specified extensions
                 if (
